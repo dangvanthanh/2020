@@ -1,3 +1,3 @@
-# 1984
+# 2020 
 
-> 1984 by George Orwell
+> How I learning from 2020
