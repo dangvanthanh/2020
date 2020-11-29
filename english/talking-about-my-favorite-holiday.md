@@ -1,0 +1,9 @@
+Talking about my favorite holidays.
+
+On holidays, I like to go hiking, getting away from it all. Nothing relaxes me as much as wilderness. I and my friends working the different cities. Hiking is a place where I and my friends can be meeting. Sometimes, we are meeting new friends on the road mountain. Talking with strangers about the same hiking hobbies is really interesting.
+
+When to go hiking, I am surrounded by nature. Birds chirping, tree leaves blowing in the wild, the sound of the stream flowing. It's refreshing to escape from the usual city life.
+
+When I go to the top of a mountain. There is a feeling of freedom. The view you see is amazing and beautiful.
+
+Besides hiking, typically in the longest holidays. I come back to my hometown, stay at home with my family. There is a precious time for me to spend together with my family. Talking my life away from home, my parent's daily work, funny stories after my young brother married... It's very warmful.
