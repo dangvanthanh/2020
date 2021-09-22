@@ -14,6 +14,7 @@
 - Hyperapp.js
 - Vue 3 and Nuxt
 - GraphQL
+- TypeScript
 
 ## Cycle (I just want to ride) 
 - Road bike for exercise and commuting 
