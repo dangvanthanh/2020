@@ -3,18 +3,19 @@
 > How I learning from 2020
 
 ## Foreign language
-- English
+- [English](./english)
 
 ## Programming language
 - Deno
-- Elixir/Phoenix
+- [Elixir/Phoenix](./elixir)
 - Svelte
 - Alpine.js
 - Elm
 - Hyperapp.js
-- Vue 3 and Nuxt
+- Vue 3 
+- Nuxt 3
 - GraphQL
-- TypeScript
+- [TypeScript](./typescript)
 
 ## Cycle (I just want to ride) 
 - Road bike for exercise and commuting 
