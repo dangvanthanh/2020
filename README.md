@@ -6,6 +6,7 @@
 - [English](./english)
 
 ## Programming language
+- [Bash](./bash)
 - Deno
 - [Elixir/Phoenix](./elixir)
 - Svelte
