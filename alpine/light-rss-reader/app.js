@@ -26,6 +26,7 @@ function lightRSSReader() {
 			});
 		},
 		addToFeed(entry) {
+			console.log(entry);
 			this.feed.push({
 				title: entry.title,
 				link: entry.link,
@@ -38,4 +39,15 @@ function lightRSSReader() {
 			});
 		}
 	};
+}
+
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker
+		.register('./sw.js')
+		.then((reg) => {
+			console.log('Registration succeeded. Scope is ' + reg.scope);
+		})
+		.catch((error) => {
+			console.log('Registration failed with ' + error);
+		});
 }
