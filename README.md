@@ -10,7 +10,7 @@
 - Deno
 - [Elixir/Phoenix](./elixir)
 - Svelte
-- Alpine.js
+- [Alpine.js](https://alpinejs.dev/)
 - Elm
 - Hyperapp.js
 - Vue 3 

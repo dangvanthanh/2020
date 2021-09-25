@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Light RSS Reader with Alpine.js</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div id="app" x-data="lightRSSReader">
+		<h1 x-text="title"></h1>
+
+		<template x-for="(entry, index) in sortedFeed" :key="index">
+			<div>
+				<a :href="entry.link" x-text="entry.title" target="_blank" rel="noopener noreferrer"></a>
+				<p x-text="entry.date.toDateString()"></p>
+			</div>
+		</template>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.3.3/dist/cdn.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/rss-parser@3.12.0/dist/rss-parser.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
