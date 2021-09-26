@@ -1,6 +1,47 @@
 const parser = new RSSParser();
 const corsEverywhere = 'https://cors-anywhere.herokuapp.com/';
 
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker
+		.register('./sw.js')
+		.then((reg) => {
+			console.log('Registration succeeded. Scope is ' + reg.scope);
+		})
+		.catch((error) => {
+			console.log('Registration failed with ' + error);
+		});
+}
+
+class IndexedDB {
+	constructor(dbName, dbVersion, dbUpgrade) {
+		return new Promise((resolve, reject) => {
+			this.db = null;
+
+			if (!('indexedDB' in window)) {
+				reject('No supported');
+			}
+
+			const dbOpen = indexedDB.open(dbName, dbVersion);
+
+			if (dbUpgrade) {
+				dbOpen.onupgradeneeded = (e) => {
+					dbUpgrade(dbOpen.result, e.oldVersion, e.newVersion);
+				};
+			}
+
+			dbOpen.onsuccess = () => {
+				this.db = dbOpen.result;
+
+				resolve(this);
+			};
+
+			dbOpen.onerror = (e) => {
+				reject(`IndexedDB error: ${e.target.errorCode}`);
+			};
+		});
+	}
+}
+
 function lightRSSReader() {
 	return {
 		title: 'Light RSS Reader',
@@ -39,15 +80,4 @@ function lightRSSReader() {
 			});
 		}
 	};
-}
-
-if ('serviceWorker' in navigator) {
-	navigator.serviceWorker
-		.register('./sw.js')
-		.then((reg) => {
-			console.log('Registration succeeded. Scope is ' + reg.scope);
-		})
-		.catch((error) => {
-			console.log('Registration failed with ' + error);
-		});
 }
