@@ -1,2 +1,12 @@
+# Node
 node_modules
+
+# Elixir
 _build
+
+# Rust
+debug/
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
